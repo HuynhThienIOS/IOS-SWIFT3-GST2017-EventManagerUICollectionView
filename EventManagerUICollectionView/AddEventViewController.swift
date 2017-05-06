@@ -14,7 +14,7 @@ class AddEventViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTextView: UITextView!
     
-    
+    var eventAdapter: EventAdapter?
     // MARK: - Datasource
     var day = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     
@@ -28,6 +28,10 @@ class AddEventViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setAdapter(eventAdapter: EventAdapter) {
+        self.eventAdapter = eventAdapter
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -45,7 +49,7 @@ class AddEventViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         if titleTextField.text != "" && contentTextView.text != "" {
             //add event
             let selectedIndex = dayPickerView.selectedRow(inComponent: 0)
-            dayEvents[selectedIndex].events.append(Event(title: titleTextField.text!, content: contentTextView.text!))
+            eventAdapter?.dayEvents[selectedIndex].events.append(Event(title: titleTextField.text!, content: contentTextView.text!))
             
             //alert
             let alert = UIAlertController(title: "Notification", message: "Saved!", preferredStyle: .alert)

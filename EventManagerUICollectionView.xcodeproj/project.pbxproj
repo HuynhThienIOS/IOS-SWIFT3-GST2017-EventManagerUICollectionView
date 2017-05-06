@@ -20,6 +20,7 @@
 		2766020A1EBCCD670084F480 /* DayEventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276602091EBCCD670084F480 /* DayEventCollectionViewController.swift */; };
 		2766020C1EBCEB9F0084F480 /* DetailEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766020B1EBCEB9F0084F480 /* DetailEventViewController.swift */; };
 		2766020E1EBD847E0084F480 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766020D1EBD847E0084F480 /* AddEventViewController.swift */; };
+		276602101EBDE6600084F480 /* EventAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2766020F1EBDE6600084F480 /* EventAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		276602091EBCCD670084F480 /* DayEventCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayEventCollectionViewController.swift; sourceTree = "<group>"; };
 		2766020B1EBCEB9F0084F480 /* DetailEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailEventViewController.swift; sourceTree = "<group>"; };
 		2766020D1EBD847E0084F480 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		2766020F1EBDE6600084F480 /* EventAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				276601FF1EBC294A0084F480 /* Event.swift */,
 				276602011EBC295E0084F480 /* DayEvent.swift */,
+				2766020F1EBDE6600084F480 /* EventAdapter.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				276602081EBCC7400084F480 /* HeaderView.swift in Sources */,
 				2766020E1EBD847E0084F480 /* AddEventViewController.swift in Sources */,
 				276602061EBCC6D50084F480 /* EventCell.swift in Sources */,
+				276602101EBDE6600084F480 /* EventAdapter.swift in Sources */,
 				276602001EBC294A0084F480 /* Event.swift in Sources */,
 				2766020C1EBCEB9F0084F480 /* DetailEventViewController.swift in Sources */,
 				276601CE1EBC26540084F480 /* AppDelegate.swift in Sources */,

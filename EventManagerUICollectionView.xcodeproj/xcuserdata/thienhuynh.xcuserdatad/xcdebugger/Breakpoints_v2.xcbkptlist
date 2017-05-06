@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EventManagerUICollectionView/DayEventCollectionViewController.swift"
-            timestampString = "515738818.889616"
+            timestampString = "515762221.687626"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "DayEventCollectionViewController"
             landmarkType = "3">
          </BreakpointContent>

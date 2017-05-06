@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class EventAdapter {
+    // MARK: - Data Source
+    var dayEvents : [DayEvent] = {
+        return DayEvent.dayEvents()
+    }()
+}

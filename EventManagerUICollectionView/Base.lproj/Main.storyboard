@@ -104,7 +104,7 @@
                     <navigationItem key="navigationItem" title="Manager Event" id="DPT-02-pC9">
                         <barButtonItem key="leftBarButtonItem" title="New" id="z7v-uP-sjs">
                             <connections>
-                                <segue destination="Bhx-xK-mXO" kind="show" id="pB7-70-iWT"/>
+                                <segue destination="Bhx-xK-mXO" kind="show" identifier="AddEvent" id="pB7-70-iWT"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="uvG-BL-B6h"/>
@@ -203,7 +203,7 @@
             </objects>
             <point key="canvasLocation" x="1093.5999999999999" y="901.79910044977521"/>
         </scene>
-        <!--Detail Event View Controller-->
+        <!--Detail-->
         <scene sceneID="hS1-u6-1fW">
             <objects>
                 <viewController id="o16-1z-POB" customClass="DetailEventViewController" customModule="EventManagerUICollectionView" customModuleProvider="target" sceneMemberID="viewController">
@@ -281,6 +281,13 @@
                             <constraint firstItem="ivD-05-bE0" firstAttribute="leading" secondItem="f9S-2q-D9n" secondAttribute="trailing" constant="15" id="soB-jw-V2M"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Detail" id="Nuy-s6-DH2">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="FZ8-kd-PdK">
+                            <connections>
+                                <action selector="saveButtonAction:" destination="o16-1z-POB" id="Ovs-JF-IvE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="contentTextView" destination="3xu-LM-KtN" id="NvO-0U-kKC"/>
                         <outlet property="dayImage" destination="u6c-SM-6Sz" id="NB0-c5-3ci"/>
